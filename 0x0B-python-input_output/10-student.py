@@ -18,7 +18,7 @@ class Student():
             attr = {}
             for j in attrs:
                 if j in self.__dict__.keys():
-                    att[j] = self.__dict__[j]
+                    attr[j] = self.__dict__[j]
             return attr
         else:
             return self.__dict__
