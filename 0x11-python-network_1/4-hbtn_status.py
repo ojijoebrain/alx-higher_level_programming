@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-"""
-fetches and displays https://alx-intranet.hbtn.io/status
-"""
+"""Fetches http://0.0.0.0:5050/status."""
 import requests
 
 if __name__ == "__main__":
-    res = requests.get("https://alx-intranet.hbtn.io/status")
+    url = "http://0.0.0.0:5050/status"
+    r = requests.get(url)
     print("Body response:")
-    print("    - type: {}".format(type(res.text)))
-    print("    - content: {}".format(res.text))
+    print("\t- type: {}".format(type(r.text)))
+    print("\t- content: {}".format(r.text))
