@@ -2,6 +2,7 @@
 """Fetches http://0.0.0.0:5050/status."""
 import requests
 
+
 if __name__ == "__main__":
     url = "http://0.0.0.0:5050/status"
     r = requests.get(url)
